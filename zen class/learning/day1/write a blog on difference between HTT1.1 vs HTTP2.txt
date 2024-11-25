@@ -1,0 +1,12 @@
+HTTP/1.1 has been the workhorse of the web since its standardization in 1999.
+ It operates on a straightforward request-response model: a browser requests a resource (like a webpage or image) from a server, and the server sends it back. 
+ While effective, HTTP/1.1 has its limitations.
+ 1.multilexing
+ 2. header overhead
+ 3. comression
+ Recognizing the need for faster, more efficient web browsing experiences, HTTP/2 was developed and standardized in 2015. 
+ It addresses many of the shortcomings of HTTP/1.1 through several key innovations
+1.Multiplexing and Concurrency
+2.Header Compression
+3.Binary Protocol
+./day1/write a blog on difference between HTT1.1 vs HTTP2.txtgit

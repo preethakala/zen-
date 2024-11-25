@@ -1,0 +1,12 @@
+objects:
+
+objects are fundamental entities that allow developers to store collections of data and more complex entities.
+In JavaScript, objects are collections of key-value pairs.
+The keys are strings (or symbols), and the values can be any data type, including other objects or functions.
+
+Internal Representation:
+
+Internally, objects in JavaScript are implemented as hash tables 
+A hash table is a data structure that associates keys with values, where each key is unique.
+
+Properties: Each property (key-value pair) of an object is stored in the hash table. The property names (keys) are converted into strings if they are not already.
