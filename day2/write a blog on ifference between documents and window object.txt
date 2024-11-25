@@ -1,0 +1,19 @@
+The Document object :
+the document object represents the web page loaded in the current browser window or frame. 
+It provides methods and properties to interact with the content of the document, which includes HTML elements,
+ CSS styles, and content loaded via JavaScript.
+
+key Characteristics of the Document Object:
+1.Hierarchy
+2.Manipulation Focus
+3.scope and global acess
+
+The Window Object:
+the window object represents the browser window that contains the tab or frame. 
+ It is the global object in client-side JavaScript, which means it's accessible from any part of your script
+  without needing to explicitly reference it.
+
+  key characters of window object:
+  1.Global Scope
+  2.Browser Window Manipulation
+  3.Timers and Events
