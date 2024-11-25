@@ -1,0 +1,53 @@
+{
+  "web_developer": {
+    "personal_information": {
+      "first_name": "preetha",
+      "last_name": "suresh",
+      "email": "preetha@gmail.com",
+      "phone": "+1234789087",
+      "address": "123 guindy, Chennai",
+      "languages_spoken": ["English", "tamil"]
+    },
+    "professional_experience": [
+      {
+        "position": "developer",
+        "company_name": "x and y company",
+        "location": "chennai",
+        "duration": "2024 - Present",
+      },
+        ],
+    "education": [
+      {
+        "degree": "Bachelor of computer applications",
+        "institution": "anna university",
+        "year_graduated": 2024
+      }
+    ],
+    "certifications": [
+      {
+        "certificate_name": "xxxxxxx",
+        "year_obtained": 2024
+      },
+      {
+        "certificate_name": "yyyyyyyy",
+        "issuing_organization": "American Red Cross",
+        "year_obtained": 2020
+      }
+    ],
+    "skills": [
+      "Excellent communication and public speaking skills",
+      "Fluent in English, Spanish, and French",
+      "Knowledgeable in history, culture, and geography of major tourist destinations",
+      "Proficient in tour management software and booking systems",
+      "Strong problem-solving and customer service skills"
+    ],
+    "references": [
+      {
+        "name": "Jane Smith",
+        "relationship": "Tour Manager, World Adventures Travel",
+        "contact": "+9876543210",
+        "email": "janesmith@email.com"
+      },
+    ]
+  }
+}
