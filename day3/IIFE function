@@ -1,0 +1,156 @@
+1.print ood numbers in array
+
+(function(arr) {
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] % 2 !== 0) {
+            console.log(arr[i]);
+        }
+    }
+})(numbers);
+
+2.Convert all the strings to title caps in a string array
+
+let stringArray = ["hello world", "good morning", "have a nice day"];
+
+// Using an IIFE for title case conversion
+(function(arr) {
+    for (let i = 0; i < arr.length; i++) {
+        arr[i] = arr[i].toLowerCase().replace(/(?:^|\s)\S/g, function(a) { return a.toUpperCase(); });
+    }
+})(stringArray);
+
+console.log(stringArray);
+
+3.Sum of all numbers in an array
+
+
+let numbers = [1, 2, 3, 4, 5];
+
+// Using an IIFE for sum calculation
+let sum = (function(arr) {
+    let total = 0;
+    for (let i = 0; i < arr.length; i++) {
+        total += arr[i];
+    }
+    return total;
+})(numbers);
+
+console.log(sum); // Output: 15
+
+4.Return all the prime numbers in an array
+
+
+let numbers = [2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+// Using an IIFE to find prime numbers
+let primeNumbers = (function(arr) {
+    let primes = [];
+
+    function isPrime(num) {
+        if (num <= 1) return false; // 1 and below are not prime numbers
+        if (num === 2) return true; // 2 is a prime number
+        if (num % 2 === 0) return false; // even numbers other than 2 are not prime
+
+        // Check for odd factors up to the square root of num
+        for (let i = 3; i <= Math.sqrt(num); i += 2) {
+            if (num % i === 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    // Iterate through the array and collect prime numbers
+    for (let i = 0; i < arr.length; i++) {
+        if (isPrime(arr[i])) {
+            primes.push(arr[i]);
+        }
+    }
+
+    return primes;
+})(numbers);
+
+console.log(primeNumbers); // Output: [2, 3, 5, 7]
+
+5.Return all the palindromes in an array
+let words = ["radar", "level", "hello", "madam", "refer", "world"];
+
+// Using an IIFE to find palindromes
+let palindromes = (function(arr) {
+    let results = [];
+
+    function isPalindrome(word) {
+        // Convert the word to lowercase to handle case insensitivity
+        word = word.toLowerCase();
+        
+        // Check if the word is the same forwards and backwards
+        return word === word.split('').reverse().join('');
+    }
+
+    // Iterate through the array and collect palindromes
+    for (let i = 0; i < arr.length; i++) {
+        if (isPalindrome(arr[i])) {
+            results.push(arr[i]);
+        }
+    }
+
+    return results;
+})(words);
+
+console.log(palindromes
+6.Return median of two sorted arrays of the same size.
+let arr1 = [1, 3, 5, 7, 9];
+let arr2 = [2, 4, 6, 8, 10];
+
+// Using an IIFE to find the median of two sorted arrays
+let median = (function(arr1, arr2) {
+    // Function to find median of two sorted arrays
+    function findMedianSortedArrays(nums1, nums2) {
+        let merged = mergeSortedArrays(nums1, nums2);
+        let n = merged.length;
+        if (n % 2 === 0) {
+            // If merged array length is even
+            return (merged[n / 2 - 1] + merged[n / 2]) / 2;
+        } else {
+            // If merged array length is odd
+            return merged[Math.floor(n / 2)];
+        }
+    }
+
+    // Function to merge two sorted arrays
+    function mergeSortedArrays(nums1, nums2) {
+        let merged = [];
+        let i = 0, j = 0;
+
+        while (i < nums1.length && j < nums2.length) {
+            if (nums1[i] <= nums2[j]) {
+                merged.push(nums1[i]);
+                i++;
+            } else {
+                merged.push(nums2[j]);
+                j++;
+            }
+        }
+
+        // Append remaining elements from nums1
+        while (i < nums1.length) {
+            merged.push(nums1[i]);
+            i++;
+        }
+
+        // Append remaining elements from nums2
+        while (j < nums2.length) {
+            merged.push(nums2[j]);
+            j++;
+        }
+
+        return merged;
+    }
+
+    // Calculate median using the merged array of arr1 and arr2
+    return findMedianSortedArrays(arr1, arr2);
+})(arr1, arr2);
+
+console.log(median); // Output: 5.5 (since (5 + 6) / 2 = 5.5)
+
+
