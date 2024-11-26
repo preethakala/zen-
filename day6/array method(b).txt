@@ -1,0 +1,16 @@
+const countries = [
+  { name: "Australia", capital: "Canberra", region: "Oceania", population: 25687041, languages: ["English"] },
+  { name: "Brazil", capital: "Brasília", region: "Americas", population: 211049527, languages: ["Portuguese"] },
+  { name: "Canada", capital: "Ottawa", region: "Americas", population: 37742154, languages: ["English", "French"] },
+  { name: "Germany", capital: "Berlin", region: "Europe", population: 83166711, languages: ["German"] },
+  { name: "Japan", capital: "Tokyo", region: "Asia", population: 126860301, languages: ["Japanese"] },
+  { name: "Kenya", capital: "Nairobi", region: "Africa", population: 53771296, languages: ["Swahili", "English"] },
+  { name: "United Kingdom", capital: "London", region: "Europe", population: 67886011, languages: ["English"] },
+  { name: "United States", capital: "Washington, D.C.", region: "Americas", population: 331002651, languages: ["English"] },
+  { name: "Nauru", capital: "Yaren", region: "Oceania", population: 10000, languages: ["Nauruan", "English"] },
+  { name: "San Marino", capital: "City of San Marino", region: "Europe", population: 34000, languages: ["Italian"] }
+];
+
+const countriesWithPopulationLessThan200K = countries.filter(country => country.population < 200000);
+
+console.log(countriesWithPopulationLessThan200K);

@@ -1,0 +1,13 @@
+const countries = [
+  { name: "Australia", capital: "Canberra", region: "Oceania", population: 25687041, languages: ["English"], flag: "🇦🇺" },
+  { name: "Brazil", capital: "Brasília", region: "Americas", population: 211049527, languages: ["Portuguese"], flag: "🇧🇷" },
+  { name: "Canada", capital: "Ottawa", region: "Americas", population: 37742154, languages: ["English", "French"], flag: "🇨🇦" },
+  { name: "Germany", capital: "Berlin", region: "Europe", population: 83166711, languages: ["German"], flag: "🇩🇪" },
+  { name: "Japan", capital: "Tokyo", region: "Asia", population: 126860301, languages: ["Japanese"], flag: "🇯🇵" },
+  { name: "Kenya", capital: "Nairobi", region: "Africa", population: 53771296, languages: ["Swahili", "English"], flag: "🇰🇪" },
+  { name: "United Kingdom", capital: "London", region: "Europe", population: 67886011, languages: ["English"], flag: "🇬🇧" },
+  { name: "United States", capital: "Washington, D.C.", region: "Americas", population: 331002651, languages: ["English"], flag: "🇺🇸" },
+];
+countries.forEach(country => {
+  console.log(`Name: ${country.name}, Capital: ${country.capital}, Flag: ${country.flag}`);
+});
