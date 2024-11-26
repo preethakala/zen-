@@ -1,0 +1,51 @@
+public class Movie {
+    // Declare the class properties (fields)
+    private String title;
+    private String studio;
+    private String rating;
+
+    // Constructor to initialize the Movie object with all properties
+    public Movie(String title, String studio, String rating) {
+        this.title = title;
+        this.studio = studio;
+        this.rating = rating;
+    }
+
+    // Overloaded constructor to initialize the Movie object with default rating "PG"
+    public Movie(String title, String studio) {
+        this.title = title;
+        this.studio = studio;
+        this.rating = "PG";  // Default rating
+    }
+
+    // Getter methods to access the properties
+    public String getTitle() {
+        return title;
+    }
+
+    public String getStudio() {
+        return studio;
+    }
+
+    public String getRating() {
+        return rating;
+    }
+
+    // Setter methods (optional, in case you want to change values after object creation)
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public void setStudio(String studio) {
+        this.studio = studio;
+    }
+
+    public void setRating(String rating) {
+        this.rating = rating;
+    }
+    public void displayMovieInfo() {
+        System.out.println("Title: " + title);
+        System.out.println("Studio: " + studio);
+        System.out.println("Rating: " + rating);
+    }
+}

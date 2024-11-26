@@ -1,0 +1,11 @@
+class Movie {
+  title: string;
+  studio: string;
+  rating: string;
+
+  constructor(title: string, studio: string, rating: string) {
+    this.title = title;
+    this.studio = studio;
+    this.rating = rating;
+  }
+}

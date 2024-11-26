@@ -1,0 +1,6 @@
+const person = new Person("preetha", 20, "12 abc Street, chennai", "555-3455");
+person.displayPersonInfo();
+person.setAge(21);
+person.setPhoneNumber("555-5678");
+console.log("\nUpdated Info:");
+person.displayPersonInfo();

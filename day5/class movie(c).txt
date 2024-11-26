@@ -1,0 +1,14 @@
+public class Main {
+    public static void main(String[] args) {
+        Movie[] movieArray = {
+            new Movie("The simba", "Disney", "PG"),
+            new Movie("mona", "Fox", "R"),
+            new Movie("encato", "Pixar", "PG"),
+            new Movie("inside out", "Warner Bros", "R")
+        };
+        Movie[] pgMovies = Movie.getPG(movieArray);
+        for (Movie movie : pgMovies) {
+            movie.displayMovieInfo();
+        }
+    }
+}
