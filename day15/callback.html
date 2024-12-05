@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown</title>
+</head>
+<body>
+    <h1 id="countdown"></h1>
+    <h2 id="message"></h2>
+
+    <script>
+        function countdown(start, callback) {
+            let count = start;
+            const countdownElement = document.getElementById('countdown');
+            const messageElement = document.getElementById('message');
+
+            const interval = setInterval(function() {
+                countdownElement.innerHTML = count;
+                count--;
+                if (count < 0) {
+                    clearInterval(interval);
+                    callback();  // Call the callback when countdown reaches 0
+                }
+            }, 1000);  // Countdown every second
+        }
+
+        function displayMessage() {
+            const messageElement = document.getElementById('message');
+            messageElement.innerHTML = "Happy Independence Day!";
+        }
+
+        // Start countdown from 10 and display the message when done
+        countdown(10, displayMessage);
+    </script>
+</body>
+</html>
